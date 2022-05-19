@@ -49,12 +49,12 @@ void CPlayer::Update(void){
 	}
 	if (g_pInput->IsKeyHold(MOFKEY_RIGHT))
 	{
-		m_Pos.x = min(m_Pos.x + PLAYER_SPEED, -FIELD_HALF_X);
+		m_Pos.x = min(m_Pos.x + PLAYER_SPEED, FIELD_HALF_X);
 		Roll += MOF_MATH_PI;
 	}
 	if (g_pInput->IsKeyHold(MOFKEY_UP))
 	{
-		m_Pos.z = min(m_Pos.z + PLAYER_SPEED, -FIELD_HALF_Z);
+		m_Pos.z = min(m_Pos.z + PLAYER_SPEED, FIELD_HALF_Z);
 	}
 	if (g_pInput->IsKeyHold(MOFKEY_DOWN))
 	{
