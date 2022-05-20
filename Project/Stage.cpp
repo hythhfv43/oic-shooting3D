@@ -21,7 +21,6 @@ CStage::~CStage(){
  *
  */
 bool CStage::Load(){
-	//背景テクスチャ
 	if (!m_BG.CreateSprite("road.png")) 
 	{
 		return false;
@@ -78,4 +77,5 @@ void CStage::RenderDebugText(){
  *
  */
 void CStage::Release(){
+	m_BG.Release();
 }
